@@ -667,50 +667,6 @@
 						  на конечном множестве прямых \(\displaystyle x=\text{const}\).</p>
 				  </section>
 		<br>
-		<section class="remark">
-			<p class="margin-top"><span class="em-wide">Замечание 3.</span> В теореме требуется непрерывность подынтегральной функции, как функции двух переменных.
-				Непрерывности даже по каждой из переменных недостаточно.</p>
-		</section>
-		</br>
-		<details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #5C5C5C;">
-			<summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;  color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Подробнее</summary>
-
-			<div class="proof">
-
-				<p class="padding-top">Рассмотрим интеграл <span class="col-black">\(\displaystyle I\left( \gamma  \right)=\int\limits_{0}^{1}{f\left( x,\gamma  \right)dx},\,\,\,\,f\left( x,\gamma  \right)=\left\{ \begin{matrix}
-   \frac{2x{{\gamma }^{2}}}{{{\left( {{x}^{2}}+{{\gamma }^{2}} \right)}^{2}}},\,\,\left( x,\gamma  \right)\ne 0;  \\
-   \,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,0,\,\,\left( x,\gamma  \right)=0.  \\
-\end{matrix} \right.\)
-</span> на множестве \(\displaystyle \gamma \ge 0\).
-				</p>
-					Очевидно, что функция \(\displaystyle f\left( x,\gamma  \right)\):
-				<p class="padding-top">
-•	\(\displaystyle \forall x\in \left[ 0,1 \right]\) непрерывна по \(\displaystyle \gamma \),
-				</p>
-				<p class="padding-top">
-•	\(\displaystyle \forall \gamma \ge 0\) непрерывна по \(\displaystyle x\),
-но разрывна в точке \(\displaystyle \left( 0,0 \right)\) как функция двух переменных:
-				</p>
-				<div class="formula">
-					\(\displaystyle \underset{\begin{smallmatrix}
-					\gamma =x, \\
-					x\to 0+
-					\end{smallmatrix}}{\mathop{\lim }}\,f\left( x,\gamma  \right)=\underset{x\to 0+}{\mathop{\lim }}\,+\infty \)
-
-				</div>
-			Вычислим интеграл \(\displaystyle I\left( \gamma  \right)\) для \(\displaystyle \gamma >0\):
-				<div class="formula">
-					\[I\left( \gamma  \right)=\int\limits_{0}^{1}{\frac{2x{{\gamma }^{2}}}{{{\left( {{x}^{2}}+{{\gamma }^{2}} \right)}^{2}}}dx}={{\gamma }^{2}}\int\limits_{0}^{1}{\frac{2x}{{{\left( {{x}^{2}}+{{\gamma }^{2}} \right)}^{2}}}dx}=\]
-				</div>
-				<div class="formula">
-					\[=\left[ t={{x}^{2}}+{{\gamma }^{2}} \right]={{\gamma }^{2}}\int\limits_{{{\gamma }^{2}}}^{1+{{\gamma }^{2}}}{\frac{1}{{{t}^{2}}}dt}={{\gamma }^{2}}\left. \left( -\frac{1}{t} \right) \right|_{t={{\gamma }^{2}}}^{t=1+{{\gamma }^{2}}}=\]
-				</div>
-				<div class="formula">
-					\[={{\gamma }^{2}}\left( -\frac{1}{1+{{\gamma }^{2}}}+\frac{1}{{{\gamma }^{2}}} \right)=\frac{1}{1+{{\gamma }^{2}}}\underset{\,\,\gamma \to 0+\,\,}{\mathop{\to }}\,1\ne 0.\]
-				</div>
-	Поскольку \(\displaystyle I\left( 0 \right)=\int\limits_{0}^{1}{0dx}\), функция \(\displaystyle I\left( \gamma  \right)\) терпит разрыв в точке \(\displaystyle \gamma =0\).
-			</div>
-		</details>
 </main>
 <br>
 <footer class="footer">
