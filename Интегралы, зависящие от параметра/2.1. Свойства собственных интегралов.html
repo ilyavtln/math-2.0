@@ -509,20 +509,24 @@
 
 			<div class="proof">
 
-				<p class="padding-top">Рассмотрим интеграл <span class="col-black">\(\displaystyle I\left( \gamma  \right)=\int\limits_{0}^{1}{f\left( x,\gamma  \right)dx},\,\,\,\,f\left( x,\gamma  \right)=\left\{ \begin{matrix}
+				<p class="padding-top">Рассмотрим интеграл
+				</p>
+				<div class="formula">\(\displaystyle I\left( \gamma  \right)=\int\limits_{0}^{1}{f\left( x,\gamma  \right)dx},\,\,\,\,f\left( x,\gamma  \right)=\left\{ \begin{matrix}
    \frac{2x{{\gamma }^{2}}}{{{\left( {{x}^{2}}+{{\gamma }^{2}} \right)}^{2}}},\,\,\left( x,\gamma  \right)\ne 0;  \\
    \,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,0,\,\,\left( x,\gamma  \right)=0.  \\
 \end{matrix} \right.\)
-</span> на множестве \(\displaystyle \gamma \ge 0\).
-				</p>
-				Очевидно, что функция \(\displaystyle f\left( x,\gamma  \right)\):
+				</div>
+				на множестве \(\displaystyle \gamma \ge 0\).
 				<p class="padding-top">
+					Очевидно, что функция \(\displaystyle f\left( x,\gamma  \right)\):
+				</p>
+				<p class="padding-top" style="padding-left: 50px">
 					•	\(\displaystyle \forall x\in \left[ 0,1 \right]\) непрерывна по \(\displaystyle \gamma \),
 				</p>
-				<p class="padding-top">
+				<p class="padding-top" style="padding-left: 50px">
 					•	\(\displaystyle \forall \gamma \ge 0\) непрерывна по \(\displaystyle x\),
-					но разрывна в точке \(\displaystyle \left( 0,0 \right)\) как функция двух переменных:
 				</p>
+					но разрывна в точке \(\displaystyle \left( 0,0 \right)\) как функция двух переменных:
 				<div class="formula">
 					\(\displaystyle \underset{\begin{smallmatrix}
 					\gamma =x, \\
@@ -993,7 +997,7 @@ a\le b\left( \gamma \right)\le b, \\ \end{matrix} \right.
 						<p class="padding-top">
 							В качестве примера, рассмотрим интеграл
 						<div class="formula">
-							\(\displaystyle I\left( \gamma  \right)=\int\limits_{0}^{1}{f\left( x,\gamma  \right)dx}], \gamma \in \left[ 0,+\infty  \right),\; f\left( x,\gamma  \right)=\left\{ \begin{matrix}
+							\(\displaystyle I\left( \gamma  \right)=\int\limits_{0}^{1}{f\left( x,\gamma  \right)dx}, \quad \gamma \in \left[ 0,+\infty  \right),\quad f\left( x,\gamma  \right)=\left\{ \begin{matrix}
 							\frac{{{\gamma }^{3}}}{{{x}^{2}}}{{e}^{-\frac{{{\gamma }^{2}}}{x}}},\,\,x>0;  \\
 							\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,0,\,\,x=0.  \\
 							\end{matrix} \right.
@@ -1001,40 +1005,38 @@ a\le b\left( \gamma \right)\le b, \\ \end{matrix} \right.
 						</div>
 						<p class="padding-top">
 							Покажем, что для него
-							\(\displaystyle \; \frac{d}{d\gamma }I\left( \gamma  \right)=\frac{d}{d\gamma }\int\limits_{0}^{1}{f\left( x,\gamma  \right)dx}\ne \int\limits_{0}^{1}{\frac{\partial }{\partial \gamma }f\left( x,\gamma  \right)dx}\),
-							хотя оба интеграла
-							<a class="tooltip-2"> существуют
-								<span class="classic">
-							Пример взят из Гелбаумаю
-								</span>
-							</a>
-							в смысле Римана.
 						</p>
+						<div class="formula" >
+							\(\displaystyle \; \frac{d}{d\gamma }I\left( \gamma  \right)=\frac{d}{d\gamma }\int\limits_{0}^{1}{f\left( x,\gamma  \right)dx}\ne \int\limits_{0}^{1}{\frac{\partial }{\partial \gamma }f\left( x,\gamma  \right)dx}\),
+						</div>
+							хотя оба интеграла существуют в смысле Римана.
 						<p class="margin-top">
-							1.	Вычислим сначала \(\displaystyle \frac{d}{d\gamma }\int\limits_{0}^{1}{f\left( x,\gamma  \right)dx}\). Поскольку \(\displaystyle I\left( 0 \right)=0\) и  \(\displaystyle \forall \gamma \ne 0\)
+							1.	Вычислим сначала \(\displaystyle \frac{d}{d\gamma }\int\limits_{0}^{1}{f\left( x,\gamma  \right)dx}\).
+						</p>
+						<p class="margin-top" style="margin-left: 20px">
+						Поскольку \(\displaystyle I\left( 0 \right)=0\; \) и
 						</p>
 						<div class="formula">
-							\(\displaystyle I\left( \gamma  \right)=\int\limits_{0}^{1}{\frac{{{\gamma }^{3}}}{{{x}^{2}}}{{e}^{-\frac{{{\gamma }^{2}}}{x}}}dx}=\left[ t=\frac{1}{x} \right]=-\int\limits_{+\infty }^{1}{{{\gamma }^{3}}{{e}^{-{{\gamma }^{2}}t}}dt}=\gamma {{e}^{-{{\gamma }^{2}}}}\), а значит,
+							\(\displaystyle \forall \gamma \ne 0\ \quad I\left( \gamma  \right)=\int\limits_{0}^{1}{\frac{{{\gamma }^{3}}}{{{x}^{2}}}{{e}^{-\frac{{{\gamma }^{2}}}{x}}}dx}=\left[ t=\frac{1}{x} \right]=-\int\limits_{+\infty }^{1}{{{\gamma }^{3}}{{e}^{-{{\gamma }^{2}}t}}dt}=\gamma {{e}^{-{{\gamma }^{2}}}}\),
 						</div>
+						а значит,
 						<div class="formula">
 							\(\displaystyle \frac{d}{d\gamma }\left( \gamma {{e}^{-{{\gamma }^{2}}}} \right)={{e}^{-{{\gamma }^{2}}}}\left( 1-2{{\gamma }^{2}} \right)\).
 						</div>
-						<p class="margin-top">
-							Определим значение производной в точке \(\displaystyle \gamma =0\).
-						</p>
-						<p class="margin-top" style="margin-left: 115px">
-							Функция \(\displaystyle I\left( \gamma  \right)\) непрерывна и \(\displaystyle {{{I}'}_{-}}\left( 0 \right)=\underset{\gamma \to 0-}{\mathop{\lim }}\,{{e}^{-{{\gamma }^{2}}}}\left( 1-2{{\gamma }^{2}} \right)=0\),
-							\[ {{{I}'}_{+}}\left( 0 \right)=\underset{\gamma \to 0+}{\mathop{\lim }}\,{{e}^{-{{\gamma }^{2}}}}\left( 1-2{{\gamma }^{2}} \right)=0\]
-						</p>
-						<p class="margin-top" style="margin-left: 115px">
-							следовательно, \(\displaystyle \; {I}'\left( 0 \right)=0\)
-						</p>
+							Определим значение производной в точке \(\displaystyle \gamma =0\). Функция \(\displaystyle I\left( \gamma  \right)\) непрерывна и
+						<div class="formula">
+							\(\displaystyle {{{I}'}_{-}}\left( 0 \right)=\underset{\gamma \to 0-}{\mathop{\lim }}\,{{e}^{-{{\gamma }^{2}}}}\left( 1-2{{\gamma }^{2}} \right)=0\),
+						</div>
+						<div class="formula">
+							\(\displaystyle {{{I}'}_{+}}\left( 0 \right)=\underset{\gamma \to 0+}{\mathop{\lim }}\,{{e}^{-{{\gamma }^{2}}}}\left( 1-2{{\gamma }^{2}} \right)=0\),
+						</div>
+						cледовательно, \(\displaystyle \; {I}'\left( 0 \right)=0\).
 						<p class="margin-top">
 							2.	Теперь вычислим интеграл из правой части формулы Лейбница
 						</p>
 						\[\int\limits_{0}^{1}{\frac{\partial }{\partial \gamma }f\left( x,\gamma  \right)dx}=\int\limits_{0}^{1}{{{e}^{-\frac{{{\gamma }^{2}}}{x}}}\left( \frac{3{{\gamma }^{2}}}{{{x}^{2}}}-\frac{2{{\gamma }^{4}}}{{{x}^{3}}} \right)dx}={{e}^{-{{\gamma }^{2}}}}\left( 1-2{{\gamma }^{2}} \right)\].
 						<p class="margin-top">
-							Таким образом в точке \(\displaystyle \gamma =0\):
+							Таким образом в точке \(\displaystyle \gamma =0\)
 						</p>
 						<div class="formula">
 							\(\displaystyle \frac{d}{d\gamma }\int\limits_{0}^{1}{f\left( x,\gamma  \right)dx}=0\), \(\displaystyle \quad \int\limits_{0}^{1}{\frac{\partial }{\partial \gamma }f\left( x,\gamma  \right)dx}=1\).
