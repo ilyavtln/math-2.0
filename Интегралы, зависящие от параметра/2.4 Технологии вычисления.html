@@ -453,8 +453,11 @@
         \( \displaystyle I\left( a,b \right)=\int\limits_{0}^{1}{\sin \left( \ln
           \frac{1}{x} \right)\,\,\frac{{{x}^{b}}-{{x}^{a}}}{\ln x}dx}, \displaystyle b&gt;a&gt;0.\)
         </span>
-  <span class = "em-wide" style="font-size: 20px">Ответ:</span><button class="spoiler-button-big" style="border:2px #A9B8C2  solid;">\[\displaystyle \,\operatorname{arctg}\left( b\,+\,1 
-          \right)\,-\,\operatorname{arctg}\left( a\,+\,1 \right)\]</button>
+
+  <div class="margin-top">
+    <span class = "em-wide" style="font-size: 20px">Ответ:</span><button class="spoiler-button-big" style="border:2px #A9B8C2  solid;">\[\displaystyle \,\operatorname{arctg}\left( b\,+\,1
+    \right)\,-\,\operatorname{arctg}\left( a\,+\,1 \right)\]</button>
+  </div>
 </p>
 <br>
 <details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #A9B8C2;">
@@ -1991,17 +1994,18 @@
   </details>
 </section>
 
-  <section>
+  <section class="normal bg-white">
     <p class="margin-top" style = "white-space: nowrap" >
-      <span class = "em-wide" style="font-size: 20px">Пример 2.11.</span>
-      Вычислить интегралы Лапласа<br> \[I\left( a \right)=\int\limits_{0}^{+\infty }{\frac{\cos \left( ax \right)}{1+{{x}^{2}}}\,dx} \;\;\; и \;\;\; K\left( a \right)=\int\limits_{0}^{+\infty }{\frac{x\sin \left( ax \right)}{1+{{x}^{2}}}\,dx}\].
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <span class = "em-wide col-blue" style="font-size: 20px">Пример 2.11.</span>
+      <span class="col-blue">Вычислить интегралы Лапласа</span>
+    <div class="col-blue">\[I\left( a \right)=\int\limits_{0}^{+\infty }{\frac{\cos \left( ax \right)}{1+{{x}^{2}}}\,dx} \;\;\; и \;\;\; K\left( a \right)=\int\limits_{0}^{+\infty }{\frac{x\sin \left( ax \right)}{1+{{x}^{2}}}\,dx}\]
+    </div>
     </p>
     <br>
     <details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #A9B8C2;">
       <summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;  color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Решение</summary>
       <div class="proof">
-        <div class="normal">
+        <div>
           <p><span>
             Пусть \(a>0\). Так как функция \(\frac{\cos \left( ax \right)}{1+{{x}^{2}}}\) всюду непрерывна, а интеграл \[\int\limits_{0}^{+\infty }{\frac{\partial }{\partial a}\left( \frac{\cos \left( ax \right)}{1+{{x}^{2}}} \right)\,dx}=-\int\limits_{0}^{+\infty }{\frac{x\sin \left( ax \right)}{1+{{x}^{2}}}\,dx}\] сходится равномерно по \(a\) на множестве \(\left[ {{a}_{0}},+\infty  \right)\), \({{a}_{0}}>0\), то, применяя правило Лейбница, получаем
           </span></p>
@@ -2023,7 +2027,7 @@
     </details>
   </section>
   <section class="remark">
-    <div class="normal bg-white">
+    <div class="normal bg-white col-blue">
     <span><span class="em-wide padding-left-on">Замечание.</span>
     <span>
       Обратим внимание на то, что во многих случаях интеграл можно вычислить и по теореме о дифференцируемости и по теореме об интегрируемости (см. примеры 2.4, 2.5, 2.7, 2.9), при этом, очевидно, трудоемкость вычисления одинаковая (так как, по сути, по ходу этих решений берется одна и та же производная и вычисляется один и тот же интеграл), но обоснование возможности применения теоремы для теоремы об интегрирование проще. Более того, можно заметить, что если удалось решить с помощью теоремы об интегрировании, то можно будет переделать это решение на использование теоремы о дифференцировании).
