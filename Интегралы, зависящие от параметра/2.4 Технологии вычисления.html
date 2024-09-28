@@ -1573,7 +1573,8 @@
  <section>
   <p class="margin-top" style = "white-space: nowrap" >
      <span class = "em-wide" style="font-size: 20px">Пример 2.8.</span>
-     Вычислить    \( \displaystyle I\left( a \right)=\int\limits_{0}^{+\infty }{\frac{1-{{e}^{-ax}}}{x}\cos
+     Вычислить
+       \( \displaystyle I\left( a \right)=\int\limits_{0}^{+\infty }{\frac{1-{{e}^{-ax}}}{x}\cos
                           x\,dx},\)  \( \displaystyle a&gt;0.\)
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
        <span class = "em-wide" style="font-size: 20px">Ответ:</span><button class="spoiler-button" style="border:2px #A9B8C2  solid;">\(\displaystyle \frac{1}{2}\ln \left( 1+{{a}^{2}} \right)\)</button>
@@ -1582,12 +1583,12 @@
   <details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #A9B8C2;">
      <summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;  color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Решение</summary>
      <div class="proof col-blue normal">
-      <>
+      
         <span>Вычислим значение функции \(\displaystyle I\left( a \right)\) в
            произвольной точке \(\displaystyle {{a}_{0}}&gt;0\). Для этого рассмотрим функцию
            \(\displaystyle I\left( a \right)\) на отрезке \(\displaystyle E=\left[
            \frac{{{a}_{0}}}{2},{{a}_{0}}+1 \right]\).</span>
-    <p><span>Учитывая, что \(\displaystyle \underset{x\to 0}{\mathop{\lim
+    <p class="m-0 pb-0"><span>Учитывая, что \(\displaystyle \underset{x\to 0}{\mathop{\lim
               }}\,\frac{1\,-\,{{e}^{-ax}}}{x}\cos x\,=\,a\), доопределим подынтегральную
               функцию до непрерывной на \(\displaystyle
               {{\left[ 0,+\infty  \right)}^{2}}\): </span></p>
@@ -1672,26 +1673,24 @@
               x\,dx}=\int\limits_{0}^{+\infty }{\underset{a\to 0+}{\mathop{\lim }}\,\left(
               \frac{1-{{e}^{-ax}}}{x}\cos x \right)\,dx}=0.
               \end{eqnarray}
-        <p><span>С другой стороны </span></p>
+        <p class="m-0 pb-0"><span>С другой стороны </span></p>
         \begin{eqnarray*}
         \displaystyle \underset{a\to 0+}{\mathop{\lim
               }}\,I\left( a \right)=\underset{a\to 0+}{\mathop{\lim }}\,\left( \frac{1}{2}\ln
               \left( 1+{{a}^{2}} \right)+C \right)=C.
               \end{eqnarray*}
-        <p>Следовательно, \(\displaystyle \forall a&gt;0\) \(\displaystyle I\left( a
+        <p class="m-0 pb-0">Следовательно, \(\displaystyle \forall a&gt;0\) \(\displaystyle I\left( a
            \right)=\frac{1}{2}\ln \left( 1+{{a}^{2}} \right)\).</p>
-     </p>
+     
     <div class="remark">
-      <p class="margin-top">
-        <span class="em-wide">Замечание.</span>
+        <p><span class="em-wide">Замечание.</span>
         <span>
           Использовать для этого теорему об интегрируемости не получится, так как хотя,
         
         \[I\left( a \right)=\int\limits_{0}^{+\infty }{\frac{1-{{e}^{-ax}}}{x}\cos x\,dx}=\int\limits_{0}^{+\infty }{\left( \int\limits_{0}^{a}{{{e}^{-\gamma x}}\cos x\,d\gamma \,} \right)dx}\]
 
           утверждать, что \[\int\limits_{0}^{+\infty }{\left( \int\limits_{0}^{a}{{{e}^{-\gamma x}}\cos x\,d\gamma \,} \right)dx}=\int\limits_{0}^{a}{\left( \int\limits_{0}^{+\infty }{{{e}^{-\gamma x}}\cos x\,dx} \right)d\gamma }\] мы не можем, так как интеграл не является равномерно сходящимся по \(\gamma \) на отрезке \(\left[ 0,a \right]\) хотя бы по причине расходимости этого интеграла при \(\gamma =0\).
-        </span>
-      </p>
+        </span></p>
     </div>
     </div>
   </details>
@@ -1995,7 +1994,7 @@
   <section>
     <p class="margin-top" style = "white-space: nowrap" >
       <span class = "em-wide" style="font-size: 20px">Пример 2.11.</span>
-      Вычислить интегралы Лапласа \(I\left( a \right)=\int\limits_{0}^{+\infty }{\frac{\cos x\left( ax \right)}{1+{{x}^{2}}}\,dx}\) и \(K\left( a \right)=\int\limits_{0}^{+\infty }{\frac{x\sin x\left( ax \right)}{1+{{x}^{2}}}\,dx}\).
+      Вычислить интегралы Лапласа<br> \[I\left( a \right)=\int\limits_{0}^{+\infty }{\frac{\cos x\left( ax \right)}{1+{{x}^{2}}}\,dx} \; и \; K\left( a \right)=\int\limits_{0}^{+\infty }{\frac{x\sin x\left( ax \right)}{1+{{x}^{2}}}\,dx}\].
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     </p>
     <br>
@@ -2012,7 +2011,7 @@
           </span></p>
           \[{I}'\left( a \right)+\frac{\pi }{2}=-\int\limits_{0}^{+\infty }{\frac{x\sin \left( ax \right)}{1+{{x}^{2}}}\,dx}+\int\limits_{0}^{+\infty }{\frac{\sin \left( ax \right)}{x}\,dx}=\int\limits_{0}^{+\infty }{\frac{\sin \left( ax \right)}{x\left( 1+{{x}^{2}} \right)}\,dx}\].
           <p><span>
-            Продифференцировав последнее неравенство, получим \[{I}''\left( a \right)=\int\limits_{0}^{+\infty }{\frac{\cos \left( ax \right)}{1+{{x}^{2}}}\,dx}\] т. е. функция \(I\left( a \right)\) удовлетворяет дифференциальному уравнению \({I}''\left( a \right)-I\left( a \right)=0\), общее решение которого имеет вид:
+            Продифференцировав последнее неравенство, получим \[{I}''\left( a \right)=\int\limits_{0}^{+\infty }{\frac{\cos \left( ax \right)}{1+{{x}^{2}}}\,dx},\] т. е. функция \(I\left( a \right)\) удовлетворяет дифференциальному уравнению \({I}''\left( a \right)-I\left( a \right)=0\), общее решение которого имеет вид:
           </span></p>
           \begin{eqnarray*}I\left( a \right)={{C}_{1}}{{e}^{a}}+{{C}_{2}}{{e}^{-a}}\end{eqnarray*}
           <p><span>
@@ -2025,7 +2024,7 @@
   </section>
   <section class="remark">
     <div class="normal bg-white">
-    <span class="em-wide">Замечание.</span>
+    <span><span class="em-wide padding-left-on">Замечание.</span>
     <span>
       Обратим внимание на то, что во многих случаях интеграл можно вычислить и по теореме о дифференцируемости и по теореме об интегрируемости (см. примеры 2.4, 2.5, 2.7, 2.9), при этом, очевидно, трудоемкость вычисления одинаковая (так как, по сути, по ходу этих решений берется одна и та же производная и вычисляется один и тот же интеграл), но обоснование возможности применения теоремы для теоремы об интегрирование проще. Более того, можно заметить, что если удалось решить с помощью теоремы об интегрировании, то можно будет переделать это решение на использование теоремы о дифференцировании).
       Но есть интегралы, для которых либо условия теоремы об интегрировании не выполняются (см. пример 2.8), либо, вообще, не удается ограничиться применением теоремы об интегрировании (см. пример 2.11).
