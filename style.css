@@ -7,6 +7,10 @@
   --selection-background: rgb(33, 103, 174);
 }
 
+.fixed-pri {
+  font-family: "Times New Roman", sans-serif
+}
+
 .text-center {
   display: flex;
   align-items: center;
