@@ -404,7 +404,7 @@
         <details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #5C5C5C;">
           <summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;  color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Подробнее</summary>
           <p>
-          <div class="proof easy">
+          <div class="proof normal">
             <p class="proof">
               Как уже говорилось выше, сходимость несобственного интеграла \(\displaystyle\int\limits_{a}^{+\infty }{f\left( x \right)dx}\)
               эквивалентна сходимости функции \(\displaystyle\varphi \left( \eta  \right)=\int\limits_{a}^{\eta }{f\left( x \right)dx}\) при \(\displaystyle\eta \to +\infty ,\,\,\eta >a\).
@@ -453,7 +453,7 @@
       Прямым следствием Критерия Коши поточечной (равномерной)
     сходимости функционального ряда \(\displaystyle\sum\limits_{n=1}^{\infty }{{{u}_{n}}\left( x \right)}\) является необходимое условие поточечной (равномерной) сходимости:
       <div class="formula">
-    \(\displaystyle\forall x\in X\,\,\,\underset{n}{\mathop{\lim }}\,{{u}_{n}}\left( x \right)=0\) (\(\displaystyle\underset{n}{\mathop{\lim }}\,\underset{x\in X}{\mathop{\sup }}\,{{u}_{n}}\left( x \right)=0\).
+    \(\displaystyle\forall x\in X\,\underset{n}{\mathop{\lim }}\,{{u}_{n}}\left( x \right)=0\)  \(\displaystyle\;\;\;\;\;(\underset{n}{\mathop{\lim }}\,\underset{x\in X}{\mathop{\sup }}{{u}_{n}}\left( x \right)=0)\).
       </div>
     <div class="margin-top">
       Для поточечной (равномерной) сходимости несобственного интеграла \(\displaystyle\int\limits_{0}^{+\infty }{f\left( x,\gamma  \right)dx}\), зависящего от параметра, аналогичного вывода сделать нельзя.
@@ -462,6 +462,7 @@
     <p style="padding-top: 20px">
     <details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #A9B8C2;">
       <summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;  color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Подробнее</summary>
+      <div class="proof">
       <img src="../graph.jpg" style="padding-left: 175px; padding-top: 25px; width:80%; height: 80%">
       <div class="margin-top">
         Для доказательства рассмотрим несобственный интеграл \(\displaystyle\int\limits_{0}^{+\infty }{f\left( x,\gamma  \right)dx}\) на
@@ -479,9 +480,8 @@
         </span>
         </a>\(\displaystyle \: \gamma \left( \frac{{{\pi }^{2}}}{6}-1 \right)\underset{\Gamma}{\mathop{\le }}\,2\left( {{\pi }^{2}}-6 \right)\).
       </div>
-    <div class="margin-top">
-      т.е. интеграл \(\displaystyle\int\limits_{0}^{+\infty }{f\left( x,\gamma  \right)dx}\) на множестве \(\displaystyle\Gamma\) сходится, и даже равномерно.  Но при этом \(\displaystyle\underset{\eta \to +\infty }{\mathop{\lim }}\,f\left( \eta ,\gamma  \right)\ne 0\) \(\displaystyle\forall \gamma \in \Gamma \).
-    </div>
+      т.е. интеграл \(\displaystyle\int\limits_{0}^{+\infty }{f\left( x,\gamma  \right)dx}\) на множестве \(\displaystyle\Gamma\) сходится, и даже равномерно.  Но при этом \(\displaystyle\underset{\eta \to +\infty }{\mathop{\lim }}f\left( \eta ,\gamma  \right)\ne 0\) \(\displaystyle\forall \gamma \in \Gamma \).
+      </div>
     </details>
     </p>
     </main>
