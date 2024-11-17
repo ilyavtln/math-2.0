@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
   <head>
     <title>Математический анализ</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -217,7 +217,7 @@
 		#navbar {
 		  background-color: #959595;
 		  position: fixed;
-		  display: 
+		  /* display:  */
 		  top: -50px;
 		  width: 100%;
 		  display:block;
@@ -391,12 +391,104 @@
             ></a
           >
           эквивалентна равномерной сходимости всех рядов вида \(\displaystyle
-          \sum\limits_{n=0}^{+\infty }{\int\limits_{{{c}_{n}}}^{{{c}_{n+1}}}
-          {f(x,\gamma )dx}}\), где \(\displaystyle \left\{ {{c}_{n}} \right\}\)
+          \sum\limits_{k=0}^{+\infty }{\int\limits_{{{\eta}_{k}}}^{{{\eta}_{k+1}}}
+          \!\!\!\!\!\!\!\!{f(x,\gamma )dx}}\), где \(\displaystyle \left\{ {{\eta}_{k}} \right\}\)
           – произвольная, сходящаяся к \(\displaystyle \mathbf{B}\)
           последовательность.
         </p>
+        <div>
+        <details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #5C5C5C;">
+          <summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;  color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Подробнее</summary>
+          <p>
+          <div class="proof normal">
+            <p class="proof">
+              Как уже говорилось выше, сходимость несобственного интеграла \(\displaystyle\int\limits_{a}^{+\infty }\!\!\!\!{f\left( x \right)dx}\)
+              эквивалентна сходимости функции \(\displaystyle\varphi \left( \eta  \right)=\int\limits_{a}^{\eta }{f\left( x \right)dx}\) при \(\displaystyle\eta \to +\infty ,\,\,\eta >a\).
+            </p>
+            <div class = "margin-top">
+              Запишем для функции \(\displaystyle\varphi \left( \eta  \right)\) определение сходимости функции по Гейне:
+            </div>
+            <div class = "formula">
+              \(\displaystyle\forall \left\{ {{\eta }_{n}} \right\}\) если \(\displaystyle\forall n\,\,{{\eta }_{n}}>a\) и
+              \(\displaystyle\underset{n\to \infty }{\mathop{\lim }}{{\eta }_{n}}=+\infty\), то
+              \(\displaystyle\underset{n\to \infty }{\mathop{\lim }}\varphi \left( {{\eta }_{n}} \right)=\underset{n\to \infty }{\mathop{\lim }}\int\limits_{a}^{{{\eta }_{n}}}\!\!\!\!{f\left( x \right)dx}\)
+            </div>
+            <div class="margin-top">
+              Заметим, что
+            </div>
+            <div class = "formula">
+              \(\displaystyle\int\limits_{a}^{{{\eta }_{n}}}{f\left( x \right)dx}=\int\limits_{a}^{{{\eta }_{1}}}{+}\left\{ \int\limits_{a}^{{{\eta }_{2}}}{-}\int\limits_{a}^{{{\eta }_{1}}}{  } \right\}+\left\{ \int\limits_{a}^{{{\eta }_{3}}}{-}\int\limits_{a}^{{{\eta }_{2}}}{  } \right\}+...+\int\limits_{a}^{{{\eta }_{n}}}{  }=\sum\limits_{k=0}^{n}{\int\limits_{{{\eta }_{k}}}^{{{\eta }_{k+1}}}\!\!\!\!\!\!\!\!{f\left( x \right)dx}}\),
+            </div>
+            <div class="margin-top">
+              т.е. интеграл \(\displaystyle\int\limits_{a}^{{{\eta }_{n}}}\!\!\!\!{f\left( x \right)dx}\)
+              можно рассматривать как частичную сумму ряда \(\displaystyle\sum\limits_{k=0}^{\infty }{\int\limits_{{{\eta }_{k}}}^{{{\eta }_{k+1}}}\!\!\!\!\!\!{f\left( x \right)dx}}\).
+            </div>
+            <div class="margin-top">
+              Таким образом, для сходимости несобственного интеграла \(\displaystyle\int\limits_{a}^{+\infty }\!\!\!\!\!{f\left( x \right)dx}\) необходимо и достаточно,
+              чтобы для произвольной последовательности \(\displaystyle\left\{ {{\eta }_{n}} \right\}\) такой, что \(\displaystyle{{\eta}_{0}}=a,\,\,\,\forall n\,\,{{\eta }_{n}}>a\)
+              и \(\displaystyle\underset{n\to \infty }{\mathop{\lim }}\!\!\!\,{{\eta}_{n}}=+\infty \), сходился ряд
+            </div>
+            <div class="formula">
+              \(\displaystyle\sum\limits_{k=0}^{\infty }{\int\limits_{{{\eta }_{k}}}^{{{\eta }_{k+1}}}\!\!\!\!\!\!\!\!{f\left( x \right)dx}}\)
+            </div>
+            <div class="proof">
+              Аналогично доказывается, что для сходимости (как поточечной, так и равномерной) несобственного
+              интеграла \(\displaystyle\int\limits_{a}^{+\infty }\!\!\!\!{f\left( x,\gamma  \right)dx}\) на множестве \(\displaystyle\Gamma \) необходимо и достаточно,
+              чтобы для произвольной последовательности \(\displaystyle\left\{ {{\eta }_{n}} \right\}\) такой, что \(\displaystyle{{\eta }_{0}}=a,\,\,\,\forall n\,\,{{\eta }_{n}}>a\)  и
+              \(\displaystyle\underset{n\to \infty }{\mathop{\lim }}\,{{\eta }_{n}}=+\infty\), на множестве \(\displaystyle\Gamma \) сходился (соответственно, поточечно или равномерно),
+              функциональный ряд \(\displaystyle\sum\limits_{k=0}^{\infty }{\int\limits_{{{\eta }_{k}}}^{{{\eta }_{k+1}}}\!\!\!\!\!\!\!\!{f\left( x,\gamma  \right)dx}}\).
+            </div>
+          </div>
+          </div>
+          </p>
+        </details>
       </section>
+  <section class="consequence">
+    <p class="margin-top">
+      <span class="em-wide">Замечание.</span>
+      Прямым следствием Критерия Коши поточечной (равномерной)
+    сходимости функционального ряда \(\displaystyle\sum\limits_{n=1}^{\infty }{{{u}_{n}}\left( x \right)}\) является необходимое условие поточечной (равномерной) сходимости:
+      <div class="formula">
+    \(\displaystyle\forall x\in X\,\underset{n}{\mathop{\lim }}\,{{u}_{n}}\left( x \right)=0\)  \(\displaystyle\;\;\;\;\;(\underset{n}{\mathop{\lim }}\,\underset{x\in X}{\mathop{\sup }}{{u}_{n}}\left( x \right)=0)\).
+      </div>
+    <div class="margin-top">
+      Для поточечной (равномерной) сходимости несобственного интеграла \(\displaystyle\int\limits_{0}^{+\infty }\!\!\!\!{f\left( x,\gamma  \right)dx}\), зависящего от параметра, аналогичного вывода сделать нельзя.
+    </div>
+    </p>
+    <p style="padding-top: 20px">
+    <details class = "margin-top" style = "margin: -10px 0 0 25px; border: 1px solid #A9B8C2;">
+      <summary style="height: 25px; line-height: 25px; padding-left: 10px; font-size: 16px;  color: #5C5C5C;cursor: pointer;border-left: 3px solid #5C5C5C">Подробнее</summary>
+      <div class="proof">
+      <div class="margin-top">
+        Для доказательства рассмотрим несобственный интеграл \(\displaystyle\int\limits_{0}^{+\infty }\!\!\!\!{f\left( x,\gamma  \right)dx}\) на
+        множестве \(\displaystyle\Gamma =\left[ 4,12 \right]\), в котором \(\displaystyle f\left( x,\gamma  \right)\) – непрерывная кусочно-линейная функция,
+        которая не равна 0 только на отрезках
+        \(\displaystyle\left[ k-\frac{1}{{{\left( k+1 \right)}^{2}}},\;k+\frac{1}{{{\left( k+1 \right)}^{2}}} \right],\;k\in \mathbb{N}\), при этом на отрезках
+        \(\displaystyle\left[ k-\frac{1}{{{\left( k+1 \right)}^{2}}},\;k \right]\),  \(\displaystyle\left[ k,\;k+\frac{1}{{{\left( k+1 \right)}^{2}}} \right]\) линейна и
+        \(\displaystyle f\left( k,\gamma  \right)=\gamma \):
+      </div>
+      <img src="../graph.jpg" style="padding-left: 175px; padding-top: 25px; width:80%; height: 80%">
+      <div>
+        <div style="text-indent: 0">
+          Очевидно, что
+        </div>
+        <div class="formula">
+          \(\displaystyle\;\; \int\limits_{0}^{+\infty }\!\!\!\!{f\left( x,\gamma  \right)dx}=\sum\limits_{k=1}^{\infty }{\frac{\gamma }{{{\left( k+1 \right)}^{2}}}}=\gamma \left( \sum\limits_{n=1}^{\infty }{\frac{1}{{{n}^{2}}}-1} \right)\:\)
+          <a class="tooltip-2">\(= \)
+            <span class="classic">
+          Доказательство известного равенства \(\displaystyle\sum\limits_{n=1}^{\infty }{\frac{1}{{{n}^{2}}}}=\frac{{{\pi }^{2}}}{6}\) здесь не приводится, так как важным является то, что ряд сходится, а не то, к чему он сходится.
+          </span>
+          </a>\(\displaystyle \: \gamma \left( \frac{{{\pi }^{2}}}{6}-1 \right)\underset{\Gamma}{\mathop{\le }}\,2\left( {{\pi }^{2}}-6 \right)\).
+        </div>
+      </div>
+      Таким образом интеграл \(\displaystyle\int\limits_{0}^{+\infty }\!\!\!\!{f\left( x,\gamma  \right)dx}\) на множестве \(\displaystyle\Gamma\) сходится, и даже равномерно, но при этом
+        <div class="formula">
+          \(\displaystyle\underset{\eta \to +\infty }{\mathop{\lim }}f\left( \eta ,\gamma  \right)\ne 0 \;\;\;\;\;\;\;\forall \gamma \in \Gamma \).
+        </div>
+      </div>
+    </details>
+    </p>
+    </section>
     </main>
 <footer class="footer">
   <p>Учебные материалы </p>
