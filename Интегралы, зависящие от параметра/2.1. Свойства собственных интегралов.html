@@ -251,7 +251,7 @@
 	  <a href="#">Интегралы, зависящие от параметра</a>
 	  <a href="#">Собственные интегралы</a>
 	  <a href="#">Свойства</a>
-	  <a href="#">Вычисление интегралов</a>
+	  
 	  <span >
 		<label>Выберите уровень: </label>
 			<select id="level">
@@ -287,7 +287,7 @@
 			<p class="margin-top">
 
 				<strong>Теорема (Непрерывность). </strong> Пусть \(\displaystyle \varPi \,=\,\left[a,b \right]\times \left[\displaystyle
-				{{\gamma }_{1}},{{\gamma }_{2}} \right]\). Если
+				{{\gamma }_{1}},{{\gamma }_{2}} \right]\). Если 
 			</p>
 			<p>
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) \(\displaystyle
@@ -729,7 +729,7 @@ a\le b\left( \gamma \right)\le b, \\ \end{matrix} \right.
 			)}{f(x,\gamma )dx}\) дифференцируема на \(\displaystyle \left[
 			{{\gamma }_{1}},{{\gamma }_{2}} \right]\) и ее производная 
 		может быть вычислена <strong><em>по правилу Лейбница:</em></strong>
-		<strong class="float-r" id="0.4">(0.4)</strong>
+		
 		<h3 class="formula">
 			\( \displaystyle {I}'(\gamma )=\int\limits_{a(\gamma )}^{b(\gamma
 				)}{\frac{\partial f\left( x,\gamma \right)}{\partial \gamma
@@ -761,11 +761,13 @@ a\le b\left( \gamma \right)\le b, \\ \end{matrix} \right.
 			</h3>
 			<p>
 				Рассмотрим функцию
+			</p>
+			<h3 class="formula" style="margin:0; padding: 0;">
 				\(\displaystyle g\left( \gamma   
 				\right)\,=\,\int\limits_{a(\gamma_0)}^{b(\gamma_0)}{\frac{\partial f(x,\gamma )}
 				{\partial \gamma }dx}\), \(\displaystyle \gamma \,\in \,\left[ {{\gamma }_{1}},
 				{{\gamma }_{2}} \right]\).
-			</p>
+			</h3>
 				<p>Так как\(\displaystyle \frac{\partial f}{\partial \gamma }\in \mathbb{C}(\)
 					<a class="tooltip-1">\(\displaystyle \varPi\)<span class="classic">
 						\(\displaystyle \varPi \,=\,\left[\displaystyle a,b \right]\times \left[\displaystyle
@@ -781,21 +783,25 @@ a\le b\left( \gamma \right)\le b, \\ \end{matrix} \right.
 				{f(x,{{\gamma }_{1}})
 				dx}=I\left( \gamma \right)-I\left( {{\gamma }_{1}} \right)\]
 				<p><span class="col-blue">Следовательно,</span>
-					 \[\displaystyle \frac{d{{I}_{1}}}{d\gamma}\left( {{\gamma }_{0}}
-					 \right)\Bigg|_{\gamma=\gamma_0}\,=\,\frac{d}{d\gamma }\left(
+					\[\frac{d}{d\gamma }{{I}}\left( {{\gamma }} \right)\,=\,\frac{d}{d\gamma }\left(
 					\int\limits_{{{\gamma }_{1}}}^{\gamma }{g(t)dt}\,+\,I\left( {{\gamma }_{1}} \right)
 					\right)=\,\frac{d}{d\gamma }\int\limits_{{{\gamma }_{1}}}^{\gamma }{g(t)dt}\,+\,0\,=\,g\left(
 					\gamma \right)=\int\limits_ {a\left( {{\gamma }_{0}}
 					\right)}^{b\left( {{\gamma }_{0}} \right)}{\frac{\partial
-					f(x,{{\gamma }_{0}} )}{\partial \gamma }dx}.\]
+					f(x,{{\gamma }} )}{\partial \gamma }dx},\]
+				</p>
+				<p style="text-indent: 0px">
+					а значит, \[\frac{d}{d\gamma }{{I}_{1}}\left( {{\gamma }_{0}} \right)=\int\limits_{a\left( {{\gamma }_{0}} \right)}^{b\left( {{\gamma }_{0}} \right)}{\frac{\partial f(x,{{\gamma }_{0}})}{\partial \gamma }dx}.\]
 				</p>
 			<p>
 			  По определению производной для функции
 			 \(\displaystyle {{I}_{2}}\left( \gamma \right)\)
 			  получим
+			  
 			</p>
-				  \[{{\left. \frac{d{{I}_{2}}\left( \gamma  \right)}{d\gamma } \right|}_{\gamma 
-={{\gamma }_{0}}}}=\underset{\gamma \to {{\gamma }_{0}}}
+			      
+				  \[{{\frac{d}{d\gamma}{{I}_{2}}\left( \gamma  \right)}|}_{\gamma 
+={{\gamma }_{0}}}=\underset{\gamma \to {{\gamma }_{0}}}
 {\mathop{\lim }}\,\frac{{{I}_{2}}\left( \gamma  \right)-{{I}_{2}}\left(
  {{\gamma }_{0}} \right)}{\gamma -{{\gamma }_{0}}}= \]
 \[=\underset{\gamma \to {{\gamma }_{0}}}{\mathop{\lim }}\,
@@ -839,22 +845,21 @@ a\le b\left( \gamma \right)\le b, \\ \end{matrix} \right.
 				  }_{0}}}={b}'\left( {{\gamma }_{0}} \right).
 				  \end{eqnarray*}
 				 
-			<p>Поэтому</p>
-				  \[ \displaystyle \frac{d{{I}_{2}}\left( {{\gamma }_{0}}
-				  \right)}{d\gamma }=\underset{\gamma \to {{\gamma
-				  }_{0}}}{\mathop{\lim }}\,\frac{f(\tilde{x},\gamma )\left(
-				  b\left( \gamma \right)-b\left( {{\gamma }_{0}} \right)
-				  \right)}{\gamma -{{\gamma }_{0}}}= \]
-				  \[ \displaystyle =\underset{\gamma \to {{\gamma
-				  }_{0}}}{\mathop{\lim }}\,\left( f(\tilde{x},\gamma
-				  )\frac{b\left( \gamma \right)-b\left( {{\gamma }_{0}}
-				  \right)}{\gamma -{{\gamma }_{0}}} \right)={b}'\left(
-				  {{\gamma }_{0}} \right)f(b\left( {{\gamma }_{0}}
-				  \right),{{\gamma }_{0}}).\]
-			<p>
+				  <p>Поэтому
+					\[{\frac{d}{d\gamma}{{I}_{2}}\left( {\gamma }_{0}  \right)}
+					=\underset{\gamma \to {{\gamma
+					}_{0}}}{\mathop{\lim }}\,\frac{f(\tilde{x},\gamma )\left(
+					b\left( \gamma \right)-b\left( {{\gamma }_{0}} \right)
+					\right)}{\gamma -{{\gamma }_{0}}}= \]
+					\[ \displaystyle =\underset{\gamma \to {{\gamma
+					}_{0}}}{\mathop{\lim }}\,\left( f(\tilde{x},\gamma
+					)\frac{b\left( \gamma \right)-b\left( {{\gamma }_{0}}
+					\right)}{\gamma -{{\gamma }_{0}}} \right)={b}'\left(
+					{{\gamma }_{0}} \right)f(b\left( {{\gamma }_{0}}
+					\right),{{\gamma }_{0}}).\]
+				  </p>
 				<span class="col-blue">Аналогично доказывается, что</span>
-			  \(\displaystyle \frac{d{{I}_{3}}\left( {{\gamma }_{0}}
-				\right)}{d\gamma }={a}'\left( {{\gamma }_{0}} \right)f(a\left(
+				\({\frac{d}{d\gamma}{{I}_{3}}\left( {\gamma }_{0}  \right)}={a}'\left( {{\gamma }_{0}} \right)f(a\left(
 				{{\gamma }_{0}} \right),{{\gamma }_{0}})\).
 			</p>
 			<p>
@@ -1362,11 +1367,15 @@ a(\gamma )\) и \(\displaystyle b(\gamma )\) дифференцируемы на
 	   </div>
 	 </details>
 
-	<div style="text-align: center; margin-bottom: 5%;">
-		<div class="next_buttom">
-		  	<a href="2.2.1. Основные определения.html">Определение несобственных интегралов, зависящих от параметра</a>
-		</div>
-	</div>  
+	 <div class="buttom">
+        <div class="back-buttom">
+          <a class="qwerty" href="2.1. Собственные интегралы.html">&#8592</a>
+        </div>
+        <div class="next-buttom">
+        <a class="qwerty" href="2.2.1. Основные определения.html">→</a>
+        </div>
+      </div> 
+		
 	
  </section>
   

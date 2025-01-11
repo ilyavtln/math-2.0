@@ -928,19 +928,46 @@ button {
   margin-top: 20px;
 }
 
-.next_buttom {
-  display: inline-block;
-  border: 1px solid rgb(33, 103, 174);
+.buttom {
+  display: flex;
+  margin: 10 px;
+  justify-content: space-between;
+  gap: 600px;
 }
+.next-buttom {
+  border: 1px solid rgb(33, 103, 174);
 
-.next_buttom a{
+  flex-grow: 1;
+}
+.back-buttom {
+  border: 1px solid rgb(33, 103, 174);
+ 
+  flex-grow: 1;
+}
+.next-buttom a{
   text-decoration: none;
   color: rgb(33, 103, 174);
   transition: 0.5s;
-  display: inline-block;
+  display: flex;
   padding: 10px;
+  justify-content: center;
+  font-size: 50px;
 }
-
- .next_buttom a:hover {
+.back-buttom a{
+  text-decoration: none;
+  color: rgb(33, 103, 174);
+  transition: 0.5s;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  font-size: 50px;
+}
+.qwerty {
+  flex-grow: 1;
+}
+ .next-buttom a:hover {
+  box-shadow: 0 0 5px 1px black;
+}
+.back-buttom a:hover {
   box-shadow: 0 0 5px 1px black;
 }
